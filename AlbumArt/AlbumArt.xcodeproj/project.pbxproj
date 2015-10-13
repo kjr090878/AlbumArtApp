@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D03B5A51BCD446200B6FDD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03B5A41BCD446200B6FDD3 /* AppDelegate.swift */; };
+		3D03B5A71BCD446200B6FDD3 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03B5A61BCD446200B6FDD3 /* AlbumsViewController.swift */; };
+		3D03B5AA1BCD446200B6FDD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D03B5A81BCD446200B6FDD3 /* Main.storyboard */; };
+		3D03B5AC1BCD446200B6FDD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D03B5AB1BCD446200B6FDD3 /* Assets.xcassets */; };
+		3D03B5AF1BCD446200B6FDD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D03B5AD1BCD446200B6FDD3 /* LaunchScreen.storyboard */; };
+		3D03B5B71BCD44FA00B6FDD3 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 3D03B5B61BCD44FA00B6FDD3 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		3D871D931BCD5187004C147F /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D871D921BCD5187004C147F /* AlbumDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		3D871D951BCD51BF004C147F /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D871D941BCD51BF004C147F /* AlbumCell.swift */; settings = {ASSET_TAGS = (); }; };
+		3D871D971BCD51FE004C147F /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D871D961BCD51FE004C147F /* TrackCell.swift */; settings = {ASSET_TAGS = (); }; };
+		AD767F2353882F50757DAA9E /* Pods_AlbumArt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B8C6872CDB2999D4B37518E /* Pods_AlbumArt.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D03B5A11BCD446200B6FDD3 /* AlbumArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D03B5A41BCD446200B6FDD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D03B5A61BCD446200B6FDD3 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		3D03B5A91BCD446200B6FDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D03B5AB1BCD446200B6FDD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D03B5AE1BCD446200B6FDD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D03B5B01BCD446200B6FDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D03B5B61BCD44FA00B6FDD3 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = "<group>"; };
+		3D871D921BCD5187004C147F /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		3D871D941BCD51BF004C147F /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		3D871D961BCD51FE004C147F /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		4B8C6872CDB2999D4B37518E /* Pods_AlbumArt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlbumArt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		968EDDC66BB518B2D915BE80 /* Pods-AlbumArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.release.xcconfig"; sourceTree = "<group>"; };
+		EDBF4B4D32D8AC579B35C6ED /* Pods-AlbumArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D03B59E1BCD446200B6FDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD767F2353882F50757DAA9E /* Pods_AlbumArt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29F1AB51ED003709043845AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EDBF4B4D32D8AC579B35C6ED /* Pods-AlbumArt.debug.xcconfig */,
+				968EDDC66BB518B2D915BE80 /* Pods-AlbumArt.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D03B5981BCD446200B6FDD3 = {
+			isa = PBXGroup;
+			children = (
+				3D03B5A31BCD446200B6FDD3 /* AlbumArt */,
+				3D03B5A21BCD446200B6FDD3 /* Products */,
+				29F1AB51ED003709043845AF /* Pods */,
+				86BBAF312E983949B45D9FBC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D03B5A21BCD446200B6FDD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D03B5A11BCD446200B6FDD3 /* AlbumArt.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D03B5A31BCD446200B6FDD3 /* AlbumArt */ = {
+			isa = PBXGroup;
+			children = (
+				3D03B5A81BCD446200B6FDD3 /* Main.storyboard */,
+				3D03B5A61BCD446200B6FDD3 /* AlbumsViewController.swift */,
+				3D871D941BCD51BF004C147F /* AlbumCell.swift */,
+				3D871D921BCD5187004C147F /* AlbumDetailViewController.swift */,
+				3D871D961BCD51FE004C147F /* TrackCell.swift */,
+				3D871D981BCD523A004C147F /* System */,
+			);
+			path = AlbumArt;
+			sourceTree = "<group>";
+		};
+		3D871D981BCD523A004C147F /* System */ = {
+			isa = PBXGroup;
+			children = (
+				3D03B5A41BCD446200B6FDD3 /* AppDelegate.swift */,
+				3D03B5AB1BCD446200B6FDD3 /* Assets.xcassets */,
+				3D03B5AD1BCD446200B6FDD3 /* LaunchScreen.storyboard */,
+				3D03B5B01BCD446200B6FDD3 /* Info.plist */,
+				3D03B5B61BCD44FA00B6FDD3 /* Podfile */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		86BBAF312E983949B45D9FBC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B8C6872CDB2999D4B37518E /* Pods_AlbumArt.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D03B5A01BCD446200B6FDD3 /* AlbumArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D03B5B31BCD446200B6FDD3 /* Build configuration list for PBXNativeTarget "AlbumArt" */;
+			buildPhases = (
+				64B0A9F1814E9AF434C4CBC3 /* Check Pods Manifest.lock */,
+				3D03B59D1BCD446200B6FDD3 /* Sources */,
+				3D03B59E1BCD446200B6FDD3 /* Frameworks */,
+				3D03B59F1BCD446200B6FDD3 /* Resources */,
+				8EFDDE6A72E80E3D66B406B6 /* Embed Pods Frameworks */,
+				064D055D9A57C2D1FB7A342C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlbumArt;
+			productName = AlbumArt;
+			productReference = 3D03B5A11BCD446200B6FDD3 /* AlbumArt.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D03B5991BCD446200B6FDD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Kelly Robinson";
+				TargetAttributes = {
+					3D03B5A01BCD446200B6FDD3 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3D03B59C1BCD446200B6FDD3 /* Build configuration list for PBXProject "AlbumArt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D03B5981BCD446200B6FDD3;
+			productRefGroup = 3D03B5A21BCD446200B6FDD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D03B5A01BCD446200B6FDD3 /* AlbumArt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D03B59F1BCD446200B6FDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D03B5AF1BCD446200B6FDD3 /* LaunchScreen.storyboard in Resources */,
+				3D03B5AC1BCD446200B6FDD3 /* Assets.xcassets in Resources */,
+				3D03B5B71BCD44FA00B6FDD3 /* Podfile in Resources */,
+				3D03B5AA1BCD446200B6FDD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		064D055D9A57C2D1FB7A342C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B0A9F1814E9AF434C4CBC3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EFDDE6A72E80E3D66B406B6 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D03B59D1BCD446200B6FDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D871D971BCD51FE004C147F /* TrackCell.swift in Sources */,
+				3D03B5A71BCD446200B6FDD3 /* AlbumsViewController.swift in Sources */,
+				3D03B5A51BCD446200B6FDD3 /* AppDelegate.swift in Sources */,
+				3D871D931BCD5187004C147F /* AlbumDetailViewController.swift in Sources */,
+				3D871D951BCD51BF004C147F /* AlbumCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D03B5A81BCD446200B6FDD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D03B5A91BCD446200B6FDD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D03B5AD1BCD446200B6FDD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D03B5AE1BCD446200B6FDD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D03B5B11BCD446200B6FDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D03B5B21BCD446200B6FDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D03B5B41BCD446200B6FDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDBF4B4D32D8AC579B35C6ED /* Pods-AlbumArt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlbumArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D03B5B51BCD446200B6FDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 968EDDC66BB518B2D915BE80 /* Pods-AlbumArt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AlbumArt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kelly.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D03B59C1BCD446200B6FDD3 /* Build configuration list for PBXProject "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D03B5B11BCD446200B6FDD3 /* Debug */,
+				3D03B5B21BCD446200B6FDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D03B5B31BCD446200B6FDD3 /* Build configuration list for PBXNativeTarget "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D03B5B41BCD446200B6FDD3 /* Debug */,
+				3D03B5B51BCD446200B6FDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D03B5991BCD446200B6FDD3 /* Project object */;
+}

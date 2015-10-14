@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qCP-Xb-FOP">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Albums View Controller-->
@@ -129,15 +130,63 @@
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" id="Jg5-xs-YDw" customClass="TrackCell" customModule="AlbumArt" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TrackCell" rowHeight="50" id="Jg5-xs-YDw" customClass="TrackCell" customModule="AlbumArt" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="50"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jg5-xs-YDw" id="mOm-yq-Cvt">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAv-TU-CAy" customClass="SVGPlayButton" customModule="SVGPlayButton">
+                                                    <rect key="frame" x="272" y="10" width="40" height="30"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="S8G-vv-aQ3"/>
+                                                        <constraint firstAttribute="height" constant="30" id="aIN-Fz-omR"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <action selector="pressedPlayButton:" destination="Jg5-xs-YDw" eventType="touchUpInside" id="MIO-1U-j0P"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zj0-Gm-QOK">
+                                                    <rect key="frame" x="8" y="8" width="184" height="33.5"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQU-vr-DVK">
+                                                    <rect key="frame" x="202" y="8" width="60" height="33.5"/>
+                                                    <animations/>
+                                                    <color key="backgroundColor" red="1" green="0.434326832" blue="0.14906493970000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="0.99">
+                                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="pressedBuyButton:" destination="Jg5-xs-YDw" eventType="touchUpInside" id="ixB-jJ-xgk"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                             <animations/>
+                                            <constraints>
+                                                <constraint firstItem="dQU-vr-DVK" firstAttribute="leading" secondItem="Zj0-Gm-QOK" secondAttribute="trailing" constant="10" id="1Gy-Uu-yGW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Zj0-Gm-QOK" secondAttribute="bottom" id="4si-1Z-S0N"/>
+                                                <constraint firstItem="zAv-TU-CAy" firstAttribute="centerY" secondItem="mOm-yq-Cvt" secondAttribute="centerY" id="CLU-Ue-qlF"/>
+                                                <constraint firstItem="Zj0-Gm-QOK" firstAttribute="top" secondItem="mOm-yq-Cvt" secondAttribute="topMargin" id="HA9-Dn-RJC"/>
+                                                <constraint firstItem="Zj0-Gm-QOK" firstAttribute="leading" secondItem="mOm-yq-Cvt" secondAttribute="leadingMargin" id="Kqq-Fv-RSZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="dQU-vr-DVK" secondAttribute="bottom" id="WJk-w0-n3L"/>
+                                                <constraint firstItem="dQU-vr-DVK" firstAttribute="top" secondItem="mOm-yq-Cvt" secondAttribute="topMargin" id="f0C-tQ-jYS"/>
+                                                <constraint firstItem="zAv-TU-CAy" firstAttribute="leading" secondItem="dQU-vr-DVK" secondAttribute="trailing" constant="10" id="khI-Ad-Qk3"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zAv-TU-CAy" secondAttribute="trailing" id="wBY-oe-SZj"/>
+                                                <constraint firstItem="zAv-TU-CAy" firstAttribute="leading" secondItem="Zj0-Gm-QOK" secondAttribute="trailing" constant="80" id="wba-MS-awN"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <animations/>
+                                        <connections>
+                                            <outlet property="buyButton" destination="dQU-vr-DVK" id="Pdk-pK-Plg"/>
+                                            <outlet property="playButton" destination="zAv-TU-CAy" id="Deg-52-dIb"/>
+                                            <outlet property="trackNameLabel" destination="Zj0-Gm-QOK" id="8in-lP-fEv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
